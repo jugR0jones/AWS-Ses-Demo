@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AWSLambda Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AWS SDK for iOS v2.2.7 </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Amazon Web Services, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/configuration">configuration</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/LambdaForKey:">+ LambdaForKey:</option>
+		
+		<option value="//api/name/defaultLambda">+ defaultLambda</option>
+		
+		<option value="//api/name/registerLambdaWithConfiguration:forKey:">+ registerLambdaWithConfiguration:forKey:</option>
+		
+		<option value="//api/name/removeLambdaForKey:">+ removeLambdaForKey:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addPermission:">- addPermission:</option>
+		
+		<option value="//api/name/createAlias:">- createAlias:</option>
+		
+		<option value="//api/name/createEventSourceMapping:">- createEventSourceMapping:</option>
+		
+		<option value="//api/name/createFunction:">- createFunction:</option>
+		
+		<option value="//api/name/deleteAlias:">- deleteAlias:</option>
+		
+		<option value="//api/name/deleteEventSourceMapping:">- deleteEventSourceMapping:</option>
+		
+		<option value="//api/name/deleteFunction:">- deleteFunction:</option>
+		
+		<option value="//api/name/getAlias:">- getAlias:</option>
+		
+		<option value="//api/name/getEventSourceMapping:">- getEventSourceMapping:</option>
+		
+		<option value="//api/name/getFunction:">- getFunction:</option>
+		
+		<option value="//api/name/getFunctionConfiguration:">- getFunctionConfiguration:</option>
+		
+		<option value="//api/name/getPolicy:">- getPolicy:</option>
+		
+		<option value="//api/name/invoke:">- invoke:</option>
+		
+		<option value="//api/name/invokeAsync:">- invokeAsync:</option>
+		
+		<option value="//api/name/listAliases:">- listAliases:</option>
+		
+		<option value="//api/name/listEventSourceMappings:">- listEventSourceMappings:</option>
+		
+		<option value="//api/name/listFunctions:">- listFunctions:</option>
+		
+		<option value="//api/name/listVersionsByFunction:">- listVersionsByFunction:</option>
+		
+		<option value="//api/name/publishVersion:">- publishVersion:</option>
+		
+		<option value="//api/name/removePermission:">- removePermission:</option>
+		
+		<option value="//api/name/updateAlias:">- updateAlias:</option>
+		
+		<option value="//api/name/updateEventSourceMapping:">- updateEventSourceMapping:</option>
+		
+		<option value="//api/name/updateFunctionCode:">- updateFunctionCode:</option>
+		
+		<option value="//api/name/updateFunctionConfiguration:">- updateFunctionConfiguration:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AWSLambda Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/AWSService.html">AWSService</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AWSLambdaService.h<br />AWSLambdaService.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><fullname>AWS Lambda</fullname><p><b>Overview</b></p><p>This is the <i>AWS Lambda API Reference</i>. The AWS Lambda Developer Guide provides additional information. For the service overview, go to <a href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">What is AWS Lambda</a>, and for information about how the service works, go to <a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS Lambda: How it Works</a> in the <i>AWS Lambda Developer Guide</i>.</p></p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/configuration" title="configuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configuration">&nbsp;&nbsp;configuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The service configuration used to instantiate this service client.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Once the client is instantiated, do not modify the configuration object. It may cause unspecified behaviors.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultLambda" title="defaultLambda"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultLambda">+&nbsp;defaultLambda</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the singleton service client. If the singleton object does not exist, the SDK instantiates the default service client with <code>defaultServiceConfiguration</code> from <code>[AWSServiceManager defaultServiceManager]</code>. The reference to this object is maintained by the SDK, and you do not need to retain it manually.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)defaultLambda</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The default service client.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For example, set the default service configuration in <code>- application:didFinishLaunchingWithOptions:</code></p>
+
+<p><em>Swift</em></p>
+
+<pre><code> func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+     let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
+     let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
+     AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = configuration
+
+     return true
+ }
+</code></pre>
+
+<p><em>Objective-C</em></p>
+
+<pre><code> - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+      AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1
+                                                                                                      identityPoolId:@"YourIdentityPoolId"];
+      AWSServiceConfiguration *configuration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSEast1
+                                                                           credentialsProvider:credentialsProvider];
+      [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = configuration;
+
+      return YES;
+  }
+</code></pre>
+
+<p>Then call the following to get the default service client:</p>
+
+<p><em>Swift</em></p>
+
+<pre><code> let Lambda = AWSLambda.defaultLambda()
+</code></pre>
+
+<p><em>Objective-C</em></p>
+
+<pre><code> AWSLambda *Lambda = [AWSLambda defaultLambda];
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerLambdaWithConfiguration:forKey:" title="registerLambdaWithConfiguration:forKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerLambdaWithConfiguration:forKey:">+&nbsp;registerLambdaWithConfiguration:forKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a service client with the given service configuration and registers it for the key.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)registerLambdaWithConfiguration:(AWSServiceConfiguration *)<em>configuration</em> forKey:(NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>A service configuration object.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>A string to identify the service client.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For example, set the default service configuration in <code>- application:didFinishLaunchingWithOptions:</code></p>
+
+<p><em>Swift</em></p>
+
+<pre><code> func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+     let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
+     let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialProvider)
+     AWSLambda.registerLambdaWithConfiguration(configuration, forKey: "USWest2Lambda")
+
+     return true
+ }
+</code></pre>
+
+<p><em>Objective-C</em></p>
+
+<pre><code> - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+     AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1
+                                                                                                     identityPoolId:@"YourIdentityPoolId"];
+     AWSServiceConfiguration *configuration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSWest2
+                                                                          credentialsProvider:credentialsProvider];
+
+     [AWSLambda registerLambdaWithConfiguration:configuration forKey:@"USWest2Lambda"];
+
+     return YES;
+ }
+</code></pre>
+
+<p>Then call the following to get the service client:</p>
+
+<p><em>Swift</em></p>
+
+<pre><code> let Lambda = AWSLambda(forKey: "USWest2Lambda")
+</code></pre>
+
+<p><em>Objective-C</em></p>
+
+<pre><code> AWSLambda *Lambda = [AWSLambda LambdaForKey:@"USWest2Lambda"];
+</code></pre><div class="warning"><p><strong>Warning:</strong> After calling this method, do not modify the configuration object. It may cause unspecified behaviors.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/LambdaForKey:" title="LambdaForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/LambdaForKey:">+&nbsp;LambdaForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Retrieves the service client associated with the key. You need to call <code>+ registerLambdaWithConfiguration:forKey:</code> before invoking this method. If <code>+ registerLambdaWithConfiguration:forKey:</code> has not been called in advance or the key does not exist, this method returns <code>nil</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)LambdaForKey:(NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>A string to identify the service client.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of the service client.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For example, set the default service configuration in <code>- application:didFinishLaunchingWithOptions:</code></p>
+
+<p><em>Swift</em></p>
+
+<pre><code> func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -&gt; Bool {
+     let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
+     let configuration = AWSServiceConfiguration(region: .USWest2, credentialsProvider: credentialProvider)
+     AWSLambda.registerLambdaWithConfiguration(configuration, forKey: "USWest2Lambda")
+
+     return true
+ }
+</code></pre>
+
+<p><em>Objective-C</em></p>
+
+<pre><code> - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+     AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc] initWithRegionType:AWSRegionUSEast1
+                                                                                                     identityPoolId:@"YourIdentityPoolId"];
+     AWSServiceConfiguration *configuration = [[AWSServiceConfiguration alloc] initWithRegion:AWSRegionUSWest2
+                                                                          credentialsProvider:credentialsProvider];
+
+     [AWSLambda registerLambdaWithConfiguration:configuration forKey:@"USWest2Lambda"];
+
+     return YES;
+ }
+</code></pre>
+
+<p>Then call the following to get the service client:</p>
+
+<p><em>Swift</em></p>
+
+<pre><code> let Lambda = AWSLambda(forKey: "USWest2Lambda")
+</code></pre>
+
+<p><em>Objective-C</em></p>
+
+<pre><code> AWSLambda *Lambda = [AWSLambda LambdaForKey:@"USWest2Lambda"];
+</code></pre>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeLambdaForKey:" title="removeLambdaForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeLambdaForKey:">+&nbsp;removeLambdaForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes the service client associated with the key and release it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)removeLambdaForKey:(NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>A string to identify the service client.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> Before calling this method, make sure no method is running on this client.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addPermission:" title="addPermission:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addPermission:">&ndash;&nbsp;addPermission:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Adds a permission to the resource policy associated with the specified AWS Lambda function. You use resource policies to grant permissions to event sources that use "push" model. In "push" model, event sources (such as Amazon S3 and custom applications) invoke your Lambda function. Each permission you add to the resource policy allows an event source, permission to invoke the Lambda function. </p>
+
+
+<p>For information about the push model, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS Lambda: How it Works</a>. </p>
+
+
+<p>If you are using versioning feature (see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases-v2.html">AWS Lambda Function Versioning and Aliases</a>), a Lambda function can have multiple ARNs that can be used to invoke the function. Note that, each permission you add to resource policy using this API is specific to an ARN, specified using the <code>Qualifier</code> parameter</p>
+
+
+<p>This operation requires permission for the <code>lambda:AddPermission</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)addPermission:(AWSLambdaAddPermissionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the AddPermission service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaAddPermissionResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorResourceConflict</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorPolicyLengthExceeded</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaAddPermissionRequest.html">AWSLambdaAddPermissionRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaAddPermissionResponse.html">AWSLambdaAddPermissionResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createAlias:" title="createAlias:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createAlias:">&ndash;&nbsp;createAlias:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an alias to the specified Lambda function version. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-v2-intro-aliases.html">Introduction to AWS Lambda Aliases</a></p>
+
+
+<p>This requires permission for the lambda:CreateAlias action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)createAlias:(AWSLambdaCreateAliasRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the CreateAlias service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaAliasConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorResourceConflict</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaCreateAliasRequest.html">AWSLambdaCreateAliasRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaAliasConfiguration.html">AWSLambdaAliasConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createEventSourceMapping:" title="createEventSourceMapping:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createEventSourceMapping:">&ndash;&nbsp;createEventSourceMapping:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifies a stream as an event source for a Lambda function. It can be either an Amazon Kinesis stream or an Amazon DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the stream.</p>
+
+
+<p>This is the pull model, where AWS Lambda invokes the function. For more information, go to <a href="http://docs.aws.amazon.com/lambda/latest/dg/lambda-introduction.html">AWS Lambda: How it Works</a> in the <i>AWS Lambda Developer Guide</i>.</p>
+
+
+<p>This association between an Amazon Kinesis stream and a Lambda function is called the event source mapping. You provide the configuration information (for example, which stream to read from and which Lambda function to invoke) for the event source mapping in the request body.</p>
+
+
+<p> Each event source, such as an Amazon Kinesis or a DynamoDB stream, can be associated with multiple AWS Lambda function. A given Lambda function can be associated with multiple AWS event sources. </p>
+
+
+<p>This operation requires permission for the <code>lambda:CreateEventSourceMapping</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)createEventSourceMapping:(AWSLambdaCreateEventSourceMappingRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the CreateEventSourceMapping service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaEventSourceMappingConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorResourceConflict</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaCreateEventSourceMappingRequest.html">AWSLambdaCreateEventSourceMappingRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaEventSourceMappingConfiguration.html">AWSLambdaEventSourceMappingConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createFunction:" title="createFunction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createFunction:">&ndash;&nbsp;createFunction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new Lambda function. The function metadata is created from the request parameters, and the code for the function is provided by a .zip file in the request body. If the function name already exists, the operation will fail. Note that the function name is case-sensitive. </p>
+
+
+<p>This operation requires permission for the <code>lambda:CreateFunction</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)createFunction:(AWSLambdaCreateFunctionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the CreateFunction service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaFunctionConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorResourceConflict</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorCodeStorageExceeded</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaCreateFunctionRequest.html">AWSLambdaCreateFunctionRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaFunctionConfiguration.html">AWSLambdaFunctionConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteAlias:" title="deleteAlias:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteAlias:">&ndash;&nbsp;deleteAlias:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes specified Lambda function alias. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-v2-intro-aliases.html">Introduction to AWS Lambda Aliases</a></p>
+
+
+<p>This requires permission for the lambda:DeleteAlias action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)deleteAlias:(AWSLambdaDeleteAliasRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the DeleteAlias service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will be <code>nil</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaDeleteAliasRequest.html">AWSLambdaDeleteAliasRequest</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteEventSourceMapping:" title="deleteEventSourceMapping:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteEventSourceMapping:">&ndash;&nbsp;deleteEventSourceMapping:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source.</p>
+
+
+<p>This operation requires permission for the <code>lambda:DeleteEventSourceMapping</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)deleteEventSourceMapping:(AWSLambdaDeleteEventSourceMappingRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the DeleteEventSourceMapping service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaEventSourceMappingConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaDeleteEventSourceMappingRequest.html">AWSLambdaDeleteEventSourceMappingRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaEventSourceMappingConfiguration.html">AWSLambdaEventSourceMappingConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteFunction:" title="deleteFunction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteFunction:">&ndash;&nbsp;deleteFunction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes the specified Lambda function code and configuration.</p>
+
+
+<p>If you don't specify a function version, AWS Lambda will delete the function, including all its versions, and any aliases pointing to the function versions.</p>
+
+
+<p>When you delete a function the associated resource policy is also deleted. You will need to delete the event source mappings explicitly.</p>
+
+
+<p>For information about function versioning, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases-v2.html">AWS Lambda Function Versioning and Aliases</a>.</p>
+
+
+<p>This operation requires permission for the <code>lambda:DeleteFunction</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)deleteFunction:(AWSLambdaDeleteFunctionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the DeleteFunction service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will be <code>nil</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorResourceConflict</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaDeleteFunctionRequest.html">AWSLambdaDeleteFunctionRequest</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAlias:" title="getAlias:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAlias:">&ndash;&nbsp;getAlias:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the specified alias information such as the alias ARN, description, and function version it is pointing to. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-v2-intro-aliases.html">Introduction to AWS Lambda Aliases</a></p>
+
+
+<p>This requires permission for the lambda:GetAlias action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)getAlias:(AWSLambdaGetAliasRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the GetAlias service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaAliasConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetAliasRequest.html">AWSLambdaGetAliasRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaAliasConfiguration.html">AWSLambdaAliasConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEventSourceMapping:" title="getEventSourceMapping:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEventSourceMapping:">&ndash;&nbsp;getEventSourceMapping:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns configuration information for the specified event source mapping (see <a>CreateEventSourceMapping</a>).</p>
+
+
+<p>This operation requires permission for the <code>lambda:GetEventSourceMapping</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)getEventSourceMapping:(AWSLambdaGetEventSourceMappingRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the GetEventSourceMapping service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaEventSourceMappingConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetEventSourceMappingRequest.html">AWSLambdaGetEventSourceMappingRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaEventSourceMappingConfiguration.html">AWSLambdaEventSourceMappingConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFunction:" title="getFunction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFunction:">&ndash;&nbsp;getFunction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the configuration information of the Lambda function and a presigned URL link to the .zip file you uploaded with <a>CreateFunction</a> so you can download the .zip file. Note that the URL is valid for up to 10 minutes. The configuration information is the same information you provided as parameters when uploading the function.</p>
+
+
+<p>Using the optional <code>Qualifier</code> parameter, you can specify a specific function version for which you want this information. If you don't specify this parameter, the API uses unqualified function ARN which return information about the $LATEST version of the Lambda function. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases-v2.html">AWS Lambda Function Versioning and Aliases</a>.</p>
+
+
+<p>This operation requires permission for the <code>lambda:GetFunction</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)getFunction:(AWSLambdaGetFunctionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the GetFunction service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaGetFunctionResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorInvalidParameterValue</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetFunctionRequest.html">AWSLambdaGetFunctionRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetFunctionResponse.html">AWSLambdaGetFunctionResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFunctionConfiguration:" title="getFunctionConfiguration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFunctionConfiguration:">&ndash;&nbsp;getFunctionConfiguration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the configuration information of the Lambda function. This the same information you provided as parameters when uploading the function by using <a>CreateFunction</a>.</p>
+
+
+<p>You can use the optional <code>Qualifier</code> parameter to retrieve configuration information for a specific Lambda function version. If you don't provide it, the API returns information about the $LATEST version of the function. For more information about versioning, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases-v2.html">AWS Lambda Function Versioning and Aliases</a>.</p>
+
+
+<p>This operation requires permission for the <code>lambda:GetFunctionConfiguration</code> operation.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)getFunctionConfiguration:(AWSLambdaGetFunctionConfigurationRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the GetFunctionConfiguration service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaFunctionConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorInvalidParameterValue</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetFunctionConfigurationRequest.html">AWSLambdaGetFunctionConfigurationRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaFunctionConfiguration.html">AWSLambdaFunctionConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPolicy:" title="getPolicy:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPolicy:">&ndash;&nbsp;getPolicy:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the resource policy, containing a list of permissions that apply to a specific to an ARN that you specify via the <code>Qualifier</code> paramter. </p>
+
+
+<p>For informration about adding permissions, see <a>AddPermission</a>.</p>
+
+
+<p>You need permission for the <code>lambda:GetPolicy action.</code></p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)getPolicy:(AWSLambdaGetPolicyRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the GetPolicy service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaGetPolicyResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorInvalidParameterValue</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetPolicyRequest.html">AWSLambdaGetPolicyRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaGetPolicyResponse.html">AWSLambdaGetPolicyResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invoke:" title="invoke:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invoke:">&ndash;&nbsp;invoke:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> Invokes a specific Lambda function version. </p>
+
+
+<p>If you don't provide the <code>Qualifier</code> parameter, it uses the unqualified function ARN which results in invocation of the $LATEST version of the Lambda function (when you create a Lambda function, the $LATEST is the version). The AWS Lambda versioning and aliases feature allows you to publish multiple versions of a Lambda function and also create aliases for each function version. So each your Lambda function version can be invoked using multiple ARNs. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases-v2.html">AWS Lambda Function Versioning and Aliases</a>. Using the <code>Qualifier</code> parameter, you can specify a function version or alias name to invoke specific function version. If you specify function version, the API uses the qualified function ARN to invoke a specific function version. If you specify alias name, the API uses the alias ARN to invoke the function version to which the alias points.</p>
+
+
+<p>This operation requires permission for the <code>lambda:InvokeFunction</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)invoke:(AWSLambdaInvocationRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the Invoke service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaInvocationResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidRequestContent</code>, <code>AWSLambdaErrorRequestTooLarge</code>, <code>AWSLambdaErrorUnsupportedMediaType</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorInvalidParameterValue</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaInvocationRequest.html">AWSLambdaInvocationRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaInvocationResponse.html">AWSLambdaInvocationResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invokeAsync:" title="invokeAsync:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invokeAsync:">&ndash;&nbsp;invokeAsync:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><important>This API is deprecated. We recommend you use <code>Invoke</code> API (see <a>Invoke</a>).</important><p>Submits an invocation request to AWS Lambda. Upon receiving the request, Lambda executes the specified function asynchronously. To see the logs generated by the Lambda function execution, see the CloudWatch logs console.</p><p>This operation requires permission for the <code>lambda:InvokeFunction</code> action.</p></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)invokeAsync:(AWSLambdaInvokeAsyncRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the InvokeAsync service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaInvokeAsyncResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidRequestContent</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaInvokeAsyncRequest.html">AWSLambdaInvokeAsyncRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaInvokeAsyncResponse.html">AWSLambdaInvokeAsyncResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listAliases:" title="listAliases:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listAliases:">&ndash;&nbsp;listAliases:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns list of aliases created for a Lambda function. For each alias, the response includes information such as the alias ARN, description, alias name, and the function version to which it points. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-v2-intro-aliases.html">Introduction to AWS Lambda Aliases</a></p>
+
+
+<p>This requires permission for the lambda:ListAliases action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)listAliases:(AWSLambdaListAliasesRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the ListAliases service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaListAliasesResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListAliasesRequest.html">AWSLambdaListAliasesRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListAliasesResponse.html">AWSLambdaListAliasesResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listEventSourceMappings:" title="listEventSourceMappings:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listEventSourceMappings:">&ndash;&nbsp;listEventSourceMappings:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a list of event source mappings you created using the <code>CreateEventSourceMapping</code> (see <a>CreateEventSourceMapping</a>), where you identify a stream as an event source. This list does not include Amazon S3 event sources. </p>
+
+
+<p>For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings.</p>
+
+
+<p>This operation requires permission for the <code>lambda:ListEventSourceMappings</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)listEventSourceMappings:(AWSLambdaListEventSourceMappingsRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the ListEventSourceMappings service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaListEventSourceMappingsResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListEventSourceMappingsRequest.html">AWSLambdaListEventSourceMappingsRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListEventSourceMappingsResponse.html">AWSLambdaListEventSourceMappingsResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listFunctions:" title="listFunctions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listFunctions:">&ndash;&nbsp;listFunctions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a list of your Lambda functions. For each function, the response includes the function configuration information. You must use <a>GetFunction</a> to retrieve the code for your function.</p>
+
+
+<p>This operation requires permission for the <code>lambda:ListFunctions</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)listFunctions:(AWSLambdaListFunctionsRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the ListFunctions service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaListFunctionsResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListFunctionsRequest.html">AWSLambdaListFunctionsRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListFunctionsResponse.html">AWSLambdaListFunctionsResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listVersionsByFunction:" title="listVersionsByFunction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listVersionsByFunction:">&ndash;&nbsp;listVersionsByFunction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>List all versions of a function.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)listVersionsByFunction:(AWSLambdaListVersionsByFunctionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the ListVersionsByFunction service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaListVersionsByFunctionResponse</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListVersionsByFunctionRequest.html">AWSLambdaListVersionsByFunctionRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaListVersionsByFunctionResponse.html">AWSLambdaListVersionsByFunctionResponse</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishVersion:" title="publishVersion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishVersion:">&ndash;&nbsp;publishVersion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Publishes a version of your function from the current snapshot of HEAD. That is, AWS Lambda takes a snapshot of the function code and configuration information from HEAD and publishes a new version. The code and <code>handler</code> of this specific Lambda function version cannot be modified after publication, but you can modify the configuration information. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)publishVersion:(AWSLambdaPublishVersionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the PublishVersion service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaFunctionConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorCodeStorageExceeded</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaPublishVersionRequest.html">AWSLambdaPublishVersionRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaFunctionConfiguration.html">AWSLambdaFunctionConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removePermission:" title="removePermission:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removePermission:">&ndash;&nbsp;removePermission:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You can remove individual permissions from an resource policy associated with a Lambda function by providing a statement ID that you provided when you addded the permission. The API removes corresponding permission that is associated with the specific ARN identified by the <code>Qualifier</code> parameter.</p>
+
+
+<p>Note that removal of a permission will cause an active event source to lose permission to the function. </p>
+
+
+<p>You need permission for the <code>lambda:RemovePermission</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)removePermission:(AWSLambdaRemovePermissionRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the RemovePermission service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will be <code>nil</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaRemovePermissionRequest.html">AWSLambdaRemovePermissionRequest</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateAlias:" title="updateAlias:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateAlias:">&ndash;&nbsp;updateAlias:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Using this API you can update function version to which the alias points to and alias description. For more information, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-v2-intro-aliases.html">Introduction to AWS Lambda Aliases</a></p>
+
+
+<p>This requires permission for the lambda:UpdateAlias action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)updateAlias:(AWSLambdaUpdateAliasRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the UpdateAlias service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaAliasConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaUpdateAliasRequest.html">AWSLambdaUpdateAliasRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaAliasConfiguration.html">AWSLambdaAliasConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateEventSourceMapping:" title="updateEventSourceMapping:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateEventSourceMapping:">&ndash;&nbsp;updateEventSourceMapping:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. </p>
+
+
+<p>This operation requires permission for the <code>lambda:UpdateEventSourceMapping</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)updateEventSourceMapping:(AWSLambdaUpdateEventSourceMappingRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the UpdateEventSourceMapping service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaEventSourceMappingConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorResourceConflict</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaUpdateEventSourceMappingRequest.html">AWSLambdaUpdateEventSourceMappingRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaEventSourceMappingConfiguration.html">AWSLambdaEventSourceMappingConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateFunctionCode:" title="updateFunctionCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateFunctionCode:">&ndash;&nbsp;updateFunctionCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> Updates the code for the specified Lambda function. This operation must only be used on an existing Lambda function and cannot be used to update the function configuration. </p>
+
+
+<p>This operation requires permission for the <code>lambda:UpdateFunctionCode</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)updateFunctionCode:(AWSLambdaUpdateFunctionCodeRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the UpdateFunctionCode service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaFunctionConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>, <code>AWSLambdaErrorCodeStorageExceeded</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaUpdateFunctionCodeRequest.html">AWSLambdaUpdateFunctionCodeRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaFunctionConfiguration.html">AWSLambdaFunctionConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateFunctionConfiguration:" title="updateFunctionConfiguration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateFunctionConfiguration:">&ndash;&nbsp;updateFunctionConfiguration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the configuration parameters for the specified Lambda function by using the values provided in the request. You provide only the parameters you want to change. This operation must only be used on an existing Lambda function and cannot be used to update the function's code. </p>
+
+
+<p>This operation requires permission for the <code>lambda:UpdateFunctionConfiguration</code> action.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AWSTask *)updateFunctionConfiguration:(AWSLambdaUpdateFunctionConfigurationRequest *)<em>request</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>A container for the necessary parameters to execute the UpdateFunctionConfiguration service method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An instance of <code>AWSTask</code>. On successful execution, <code>task.result</code> will contain an instance of <code>AWSLambdaFunctionConfiguration</code>. On failed execution, <code>task.error</code> may contain an <code>NSError</code> with <code>AWSLambdaErrorDomain</code> domain and the following error code: <code>AWSLambdaErrorService</code>, <code>AWSLambdaErrorResourceNotFound</code>, <code>AWSLambdaErrorInvalidParameterValue</code>, <code>AWSLambdaErrorTooManyRequests</code>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Classes/AWSLambdaUpdateFunctionConfigurationRequest.html">AWSLambdaUpdateFunctionConfigurationRequest</a></p></code></li>
+					
+					<li><code><p><a href="../Classes/AWSLambdaFunctionConfiguration.html">AWSLambdaFunctionConfiguration</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLambdaService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Amazon Web Services, Inc. All rights reserved. Updated: 2015-10-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+ Contents
+==========
+
+1. Download
+2. Install Frameworks
+3. Bridging Header
+4. Build Settings
+5. Send An Email
+6. Useful links
+
+ 1. Download
+-------------
+Download the AWS iOS SDK. The latest version as of writing is 2.3.0.
+
+ 2. Install Frameworks
+-----------------------
+
+Open the zip file and copy the AWSCore and AWSSES frameworks into your project. These frameworks are loaded into the frameworks sub-folder.
+
+Add the libz1.tdb library to your project. This is an Apple library.
+
+ 3. Bridging Header
+--------------------
+If a bridging header file doesn't exist in your swift project, create a new .h file. Make sure the name of the file contains the word "Bridging" to identify its purpose.
+
+Open the bridging header file and place the following two lines just above the #endif statement at the bottom of the file:
+
+#import <AWSCore/AWSCore.h>
+#import <AWSSES/AWSSES.h>
+
+ 4. Build Settings
+-------------------
+
+Goto the build settings tab in the project settings.
+
+Search for "Bridging header". Set the path to the path of your bridging header file.
+
+Also set the ENABLE_BITCODE setting to NO. The AWS SDK doesn't use the bitcode functionality.
+
+ 5. Send An Email
+------------------
+
+Add the following code your file to send an email:
+
+//Step 1: Create AWS Service
+
+let credentialsProvider = AWSStaticCredentialsProvider.init(
+    accessKey: <replace with AWS access key>,
+    secretKey: <replace with AWS secret key>
+)
+
+let defaultServiceConfiguration = AWSServiceConfiguration(
+    region: AWSRegionType.EUWest1,
+    credentialsProvider: credentialsProvider
+)
+AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = defaultServiceConfiguration
+
+//Step 2: Create the email
+let messageBody : AWSSESContent = AWSSESContent()
+messageBody.data = <replace with text for email body>
+
+let subject : AWSSESContent = AWSSESContent()
+subject.data = <replace with email subject>
+
+let emailBody : AWSSESBody = AWSSESBody()
+emailBody.text = messageBody
+
+let message : AWSSESMessage = AWSSESMessage()
+message.subject = subject
+message.body = emailBody
+
+let destination : AWSSESDestination = AWSSESDestination()
+//NOTE: Only a single email address is handled.
+//NOTE: The toAddress field is an array of String objects!
+destination.toAddresses = [<replace with email address>]
+
+//Step 3: Sending the email
+let sendRequest : AWSSESSendEmailRequest = AWSSESSendEmailRequest()
+sendRequest.source = self.fromEmailAddress
+sendRequest.destination = destination
+sendRequest.message = message
+
+AWSSES
+    .defaultSES()
+    .sendEmail(sendRequest)
+    .continueWithSuccessBlock {
+        (task) -> AnyObject! in
+
+        print("Success")
+
+        return task.result
+    }
+    .continueWithBlock {
+        (task) -> AnyObject! in
+
+        //Errors are handled here
+
+        if task.error != nil
+        {
+            print("Error sending email: ")
+            let type : String? = task.error.userInfo["Type"] as? String
+            if type != nil
+            {
+                print("Type: \(type!)")
+            }
+
+            let message : String? = task.error.userInfo["Message"] as? String
+            if message != nil
+            {
+                 print("Message: \(message!)")
+            }
+
+            let code : String? = task.error.userInfo["Code"] as? String
+            if code != nil
+            {
+                print("Code: \(code!)")
+            }
+        }
+
+        return nil;
+    }
+
+ 6. Useful Links
+-----------------
+
+iOS AWS Github Page
+https://github.com/aws/aws-sdk-ios
+
+iOS AWS SDK Class Reference
+http://docs.aws.amazon.com/AWSiOSSDK/latest/index.html
+
+AWS Developer Blog
+http://mobile.awsblog.com/blog/author/Yosuke+Matsuda
