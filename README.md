@@ -25,6 +25,10 @@ The following instructions assume you are using XCode 7 and iOS SDK 9.0. These i
 3. Navigate to the location of the aws-ios-sdk.zip file.
 4. Extract the contents of the zip file to a known location.
 5. Drag the AWSCore and AWSES frameworks, found in the frameworks subfolder, into your project in XCode.
-6. 
+6. In the project settings, under the "Build Settings" tab, add the AWSCore and AWSSES frameworks to the "Linked Frameworks and Binaries" section.
+7. Add the libz1.tdb library to "Linked Frameworks and Binaries" section as well.
+
+**2.3 Create the Bridging Header**
+This is only necessary if there is no bridging header in the project.
 
 ##<a name="sending_an_email"></a>3. Sending an email
